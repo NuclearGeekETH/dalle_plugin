@@ -19,8 +19,8 @@ Setup your .env file:
 ```bash
 openai_key="YOUR_OPENAI_KEY"
 ```
-Make sure you replace YOUR_OPENAI_KEY with your actual OpenAI Key.
-4. Save the .env file.
+4. Make sure you replace YOUR_OPENAI_KEY with your actual OpenAI Key.
+5. Save the .env file.
 
 To run the plugin, enter the following command:
 
