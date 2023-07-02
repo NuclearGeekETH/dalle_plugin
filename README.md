@@ -10,6 +10,18 @@ To install the required packages for this plugin, run the following command:
 pip install -r requirements.txt
 ```
 
+Setup your .env file:
+
+1. In your project root, create a new file and name it .env.
+2. Open the .env file.
+3. Add your OpenAI API Key in the following way:
+
+```bash
+openai_key="YOUR_OPENAI_KEY"
+```
+Make sure you replace YOUR_OPENAI_KEY with your actual OpenAI Key.
+4. Save the .env file.
+
 To run the plugin, enter the following command:
 
 ```bash
