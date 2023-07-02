@@ -1,0 +1,31 @@
+openapi: 3.0.1
+info:
+  title: DALLE Image Generator Plugin
+  description: A plugin that generates an image using Dalle model based on a given prompt.
+  version: '1.0'
+servers:
+  - url: http://localhost:5003
+paths:
+  /draw:
+    post:
+      operationId: draw
+      summary: Generate an image
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                prompt:
+                  type: string
+                  description: The prompt for image generation
+              required:
+                - prompt
+      responses:
+        '200':
+          description: URL of the generated image
+          content:
+            text/plain:
+              schema:
+                type: string
